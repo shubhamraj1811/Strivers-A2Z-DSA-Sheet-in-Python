@@ -52,15 +52,15 @@ This repository contains my solutions, notes, explanations, and learning resourc
 
 # 🏆 Current Stats
 
-| Category | Completed |
-|-----------|-----------|
-| Basics | 4 |
-| Arrays | 0 |
-| Binary Search | 0 |
-| Strings | 0 |
-| Trees | 0 |
-| Graphs | 0 |
-| DP | 0 |
+| Category      | Completed |
+|---------------|-----------|
+| Basics        | 10        |
+| Arrays        | 0         |
+| Binary Search | 0         |
+| Strings       | 0         |
+| Trees         | 0         |
+| Graphs        | 0         |
+| DP            | 0         |
 
 ---
 
