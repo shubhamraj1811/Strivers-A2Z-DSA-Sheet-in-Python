@@ -33,17 +33,17 @@ Constraints:
 """
 
 class Solution:
-   def isPalindrome(self, x: int) -> bool:
-      # Negative numbers are not palindromes
-      if (x < 0) or (x % 10 == 0 and x != 0):
-         return False
+    def isPalindrome(self, x: int) -> bool:
+        # Negative numbers are not palindromes
+        if (x < 0) or (x % 10 == 0 and x != 0):
+            return False
       
-      half_reversed = 0
-      while x > half_reversed:
-         half_reversed = half_reversed * 10 + x % 10
-         x //= 10
+        half_reversed = 0
+        while x > half_reversed:
+            half_reversed = half_reversed * 10 + x % 10
+            x //= 10
 
-      return x == half_reversed or x == half_reversed // 10
+        return x == half_reversed or x == half_reversed // 10
 
 # Example usage
 solution = Solution()
