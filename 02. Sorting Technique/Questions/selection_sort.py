@@ -22,3 +22,26 @@ Constraints
 -104 <= nums[i] <= 104
 nums[i] may contain duplicate values.
 """
+
+from typing import List
+from typing import Tuple
+from typing import Dict
+
+class Solution:
+    def selectionSort(self, ar: List[int]) -> List[int]:
+        n = len(ar)
+
+        for i in range(n):
+            min = i
+            for j in range(i+1, n):
+                if ar[min] > ar[j]:
+                    min = j
+            ar[i], ar[min] = ar[min], ar[i]
+
+        return ar
+    
+# Example usage
+sol = Solution()
+
+print(sol.selectionSort([7, 4, 1, 5, 3]))  # Output: [1, 3, 4, 5, 7]
+print(sol.selectionSort([5, 4, 4, 1, 1]))  # Output: [1, 1, 4, 4, 5]
