@@ -46,7 +46,7 @@ def findSecondLargest(ar):
     return second
 
 # =========== main ===========
-ar1 = [8, 8, 7, 6, 5]
+ar1 = [8, 8, 7, 6, 5, 90, 91]
 ar2 = [9, 9, 9, 9, 9]
 ar3 = [99]
 ar4 = []
