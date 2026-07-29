@@ -8,11 +8,13 @@ Explanation: The largest element in array is 6
 """
 
 # ====== first method - linear search ======
+# Time = O(n)
+# Space = O(1)
 def findLargestElement (ar):
     # edge case - empty array
     if not ar:
         return None
-    
+
     large = ar[0]
     for num in ar:
         if num > large:
@@ -20,10 +22,11 @@ def findLargestElement (ar):
 
     return large
 
-# Time = O(n)
-# Space = O(1)
-
 # ====== second method - max function ======
+# Even though this is still $O(N)$ time complexity
+# the max() function is implemented in highly optimized C code under the hood.
+# It avoids the overhead of the Python interpreter running a for loop,
+# making it significantly faster in real time than our manual loop.
 def pythonMethod(ar):
     return max(ar, default=None)
 
