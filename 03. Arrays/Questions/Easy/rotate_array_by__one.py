@@ -1,7 +1,4 @@
 """
-🚀🌐⌛🔰
-#️⃣
-
 #️⃣ Question
 Given an array ar, rotate the array by one position in clockwise direction.
 
