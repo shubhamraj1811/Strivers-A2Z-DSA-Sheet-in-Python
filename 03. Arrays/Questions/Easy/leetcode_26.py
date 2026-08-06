@@ -48,6 +48,10 @@ It does not matter what you leave beyond the returned k (hence they are undersco
     b. else: write++, swap read and right 
 5. return write+1 -> unique element array lenght
 
+🌐 Complexity
+Time Complexity: O(N) — We only visit each element exactly once.
+Space Complexity: O(1) — We only use two variables to store our state.
+
 """
 
 def removeDuplicates(ar):
@@ -57,12 +61,11 @@ def removeDuplicates(ar):
         return n
 
     w = 0
+
     for r in range(1, n):
-        if ar[r] == ar[w]:
-            pass
-        else:
+        if ar[r] != ar[w]:
             w += 1
-            ar[w], ar[r] = ar[r], ar[w]
+            ar[w] = ar[r]
     return w+1
 
 # main
@@ -80,7 +83,3 @@ n = removeDuplicates(array)
 print(f"Elements = {n}")
 for i in range(n):
     print(array[i], end=" ")
-
-print()
-
-print(array)

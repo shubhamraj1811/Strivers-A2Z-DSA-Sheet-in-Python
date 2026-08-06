@@ -112,17 +112,6 @@ It's to understand patterns, write clean code, and build strong problem-solving 
 - ✅ Clean & Readable Code
 - ✅ Helpful Comments (when required)
 
----
-
-# 📈 Current Statistics
-
-| Metric | Count |
-|---------|------:|
-| Topics Completed | 3 |
-| Problems Solved | 10 |
-| Concepts Covered | 5 |
-| Repository Commits | 12 |
-
 
 ---
 
