@@ -45,13 +45,12 @@ It does not matter what you leave beyond the returned k (hence they are undersco
 3. write = 0, read = 1
 4. loop: until read 0 to n-1
     a. If ar(read) == ar(write): do nothing
-    b. else: write++, swap read and right 
+    b. else: write++, swap read and right
 5. return write+1 -> unique element array lenght
 
 🌐 Complexity
 Time Complexity: O(N) — We only visit each element exactly once.
 Space Complexity: O(1) — We only use two variables to store our state.
-
 """
 
 def removeDuplicates(ar):
@@ -70,12 +69,12 @@ def removeDuplicates(ar):
 
 # main
 
-array = [0,1,1,2,2]
+# array = [0,1,1,2,2] # [0,1,2]
 # array = [0,1,1,2,2,2,3,3,4,5]
 # array = []
 # array = [1]
 # array = [2,2,2,2,2,2,2]
-# array = [0,0,0,0,0,1,1,1,1,1,2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5,5,6,6,6,6,6,6,6,6,7,7,7,7,7,7]
+array = [0,0,0,0,0,1,1,1,1,1,2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5,5,6,6,6,6,6,6,6,6,7,7,7,7,7,7]
 
 print(array)
 
