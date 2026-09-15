@@ -13,11 +13,11 @@ If we rotate arr by one position in clockwise 5 come to the front and remaining 
 🔰 Algorithm
 
 """
-
+# right rotate by one
 def rightRotateByOne(ar):
     n = len(ar)
     # edge case
-    if n < 2:
+    if n < 2: # size only 1 or 0, no need to rotate
         return
     
     save_last = ar[n-1] # save last element
@@ -26,10 +26,12 @@ def rightRotateByOne(ar):
     ar[0] = save_last
     return ar
 
+
+# left rotate by one
 def leftRotateByOne(ar):
     n = len(ar)
     # edge case
-    if n < 2:
+    if n < 2: # size only 1 or 0, no need to rotate
         return
 
     save_first = ar[0]
