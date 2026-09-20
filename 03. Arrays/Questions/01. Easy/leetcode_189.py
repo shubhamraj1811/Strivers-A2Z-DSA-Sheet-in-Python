@@ -62,7 +62,7 @@ def leftRotateByK(a, k):
     k = k % n
     if k == 0:
         return
-    
+
     # reverse first k elements
     reverse(a, 0, k-1)
 
@@ -73,8 +73,8 @@ def leftRotateByK(a, k):
     reverse(a, 0, n-1)
 
 # main
-ar = [1, 2, 3, 4, 5, 6, 7, 8]
-d = 20
+ar = [1, 2, 3, 4, 5, 6, 7]
+d = 3
 
 print(f"Original Array: {ar}")
 
