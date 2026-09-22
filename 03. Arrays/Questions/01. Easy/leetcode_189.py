@@ -1,6 +1,4 @@
 """
-🚀🌐⌛🔰
-
 #️⃣ QUESTION
 Given an array arr[]. Rotate the array to the left (anti-clockwise direction) by k steps, where k is a positive integer.
 
